@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mel's Tutorial Web Page</title>
+    <link rel="stylesheet" type="text/css" href="tutorialPage.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="animated bounceInDown" id="logo">Learn JS TODAY</h1>
+        <nav>
+            <ul id="topNav">
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#objects">Objects</a></li>
+                <li><a href="#arrays">Arrays</a></li>
+                <li><a href="#forLoops">For Loops</a></li>
+                <li><a href="#conditional">Conditionals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainContent">
+        <h2>Introduction</h2>
+        <p>
+            Learn JS Today is your resource for taking your first steps in your journey to 
+            JavaScript knowledge. We have curated resources for your personal betterment.
+        </p>
+        <article id="functions">
+            <h2>Functions</h2>
+            <p>
+                A JavaScript function is a block of code designed to perform a particular task.
+                That task could be anything like completing some sort of mathematical equation, 
+                displaying information, or making some animation occur. You can set parameters to
+                the function to call them.
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>
+                    <span class="purp">function</span> <span class="blu">multiplyThat</span>(<span class="orng">firstNumber</span>, <span class="orng">secondNumber</span>) {
+                        <span class="blu">return</span> firstNumber * secondNumber;
+                    }
+
+                    <span class="orng">console</span>.<span class="blu">log</span>(<span class="blu">multiplyThat</span>(<span class="orng">3</span>,<span class="orng">5</span>));
+                    </code>
+                </pre>
+            </div>
+        </article>
+        <article id="objects">
+            <h2>Objects</h2>
+            <p>
+                A JavaScript object is a collection of properties that make up the whole. For example,
+                a car has multiple different pieces that fit together to make up the whole vehicle. 
+                Contents of an object will always be found within {}.
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>
+                <span class="purp">let</span> car <span class="purp">=</span> {
+                    make: <span class="grn">'Nissan'</span>,
+                    model: <span class="grn">'Pathfinder'</span>,
+                    year: <span class="orng">1998</span>,
+                    color: <span class="grn">'Green'</span>,
+                    name: <span class="grn">'Alice'</span>,
+                    beautiful: <span class="orng">true</span>
+                }
+
+                <span class="orng">console</span>.<span class="blu">log</span>(car.name);
+                    </code>
+                </pre>
+            </div>
+        </article>
+        <article id="arrays">
+            <h2>Arrays</h2>
+            <p>
+                A JavaScript array holds information of any type. You can view information in a array by
+                indexing it. To find the contents of an array, it's helpful for you to know that arrays 
+                begin at 0, not 1.
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>
+                <span class="purp">let</span> cats <span class="purp">=</span> [<span class="grn">'Beans'</span>, '<span class="grn">Gravy'</span>, <span class="grn">'Rupert'</span>, <span class="grn">Zola</span>, <span class="grn">'Loumi'</span>];
+
+                <span class="orng">console</span>.<span class="blu">log</span>(cats[<span class="orng">0</span>]);
+                    </code>
+                </pre>
+            </div>
+        </article>
+        <article id="forLoops">
+            <h2>For Loops</h2>
+            <p>
+                A For Loop in JavaScript loops through code for as many times as you want. As long
+                as the conditions are still true, it will keep looping. It is possible to have an 
+                infinite loop, but no one needs that kind of negativity in their life.
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>
+                <span class="blu">for</span> (i <span class="purp">=</span> 0; i <span class="purp"><=</span> 5; i<span class="purp">++</span>) {
+                    <span class="orng">console</span>.<span class="blu">log</span>(<span class="grn">"The number is "</span> <span class="purp">+</span> i);
+                }
+                    </code>
+                </pre>
+            </div>
+        </article>
+        <article id="conditional">
+            <h2>Conditionals</h2>
+            <p>
+                A Conditional Statement in JavaScript will do different things depending on the 
+                different conditions. If the condition is true, it will perform the specified 
+                action. If the condition is false, it will carry on to the next condition. If 
+                there are no more conditions, there may be an else statement to specify what to 
+                do if none of the conditions are true.
+            </p>
+            <div class="codeBox">
+                <pre>
+                    <code>
+                <span class="purp">let</span> favShow <span class="purp">=</span> <span class="grn">"Parks and Rec"</span>;
+
+                <span class="blu">if</span>(favShow <span class="purp">==</span> <span class="grn">"Grey's Anatomy"</span>) {
+                    <span class="orng">console</span>.<span class="blu">log</span>(<span class="grn">"What a sad show!"</span>);
+                } <span class="blu">else if</span>(favShow <span class="purp">==</span> <span class="grn">"Great British Baking Show"</span>) {
+                    <span class="orng">console</span>.<span class="blu">log</span>(<span class="grn">"No soggy bottoms here!"</span>);
+                } <span class="blu">else if</span>(favShow <span class="purp">==</span> <span class="grn">"Parks and Rec"</span>) {
+                    <span class="orng">console</span>.<span class="blu">log</span>(<span class="grn">"Bye bye, Li'l Sebastian!"</span>);
+                } <span class="blu">else</span> {
+                    <span class="orng">console</span>.<span class="blu">log</span>(<span class="grn">"Your favorite show isn't as good"</span>);
+                }
+                    </code>
+                </pre>
+            </div>
+        </article>
+        <h2>Summary</h2>
+        <p>
+            In summary, JavaScript is as difficult as you make it. As soon as you understand some 
+            concepts, it is easy to delve deeper and learn more new things. JavaScript is always 
+            changing and becoming better. In order to stay relevant, you need to always be learning 
+            and challenging yourself.
+        </p>
+    </div>
+    <div class="sidebarContent">
+        <sidebar>
+            <h3>Hot Resources</h3>
+            <ul class="sidebarLinks">
+                <li><a href="https://www.codecademy.com/learn/learn-javascript" target="_blank">Codecademy</a></li>
+                <li><a href="https://www.learn-js.org/" target="_blank">Learn JS</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3 Schools</a></li>
+            </ul>
+            <h3>Additional Reading</h3>
+            <ul class="sidebarLinks">
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+            </ul>
+        </sidebar>
+    </div>
+    <footer>
+        <ul id="footerNav">
+            <li><a href="https://www.linkedin.com/in/melanie-gaston/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/MelGaston" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/No1_LikeGaston" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/52shadesofpizza/" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
