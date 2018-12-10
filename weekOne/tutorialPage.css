@@ -42,7 +42,7 @@ body {
 }
 
 header {
-    background-color: #efefef;
+    background-color: #ededed;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
@@ -64,6 +64,8 @@ header {
     border-radius:5px;
     padding:20px;
     text-align:center;
+    position: fixed;
+    left:72vw;
 }
 
 .sidebarContent ul {
