@@ -33,7 +33,7 @@ body {
 
 #topNav li a:hover, #footerNav li a:hover {
     background-color: #851d50;
-}
+} 
 
 #footerNav {
     position: fixed;
