@@ -1,0 +1,42 @@
+body {
+    background-color: #3f4959 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png") !important;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color:#ffffff !important;
+}
+
+.card {
+    width: 30%;
+    display: inline-flex;
+    vertical-align: middle;
+    margin:1vh 1vw;
+    background-color: #ffffff;
+    float: left;
+}
+
+form {
+    width:60%;
+    margin:5vh auto;
+
+}
+
+input {
+    padding:1vh 1vw;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin:2em;
+    width:50%;
+    font-size:20px;
+}
+
+label {
+    font-size:20px;
+    display: block;
+    text-align: center;
+    color:#ffffff !important;
+}
